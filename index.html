@@ -7,7 +7,6 @@
 <title>Nikhil Basapurapu | Senior Network Engineer</title>
 
 <style>
-
 body{
     margin:0;
     font-family:Arial,Helvetica,sans-serif;
@@ -16,13 +15,14 @@ body{
 }
 
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
-    padding:30px;
+    padding:35px;
 }
 
 .hero{
     text-align:center;
+    padding:35px 20px 55px;
 }
 
 .hero img{
@@ -30,28 +30,35 @@ body{
     height:280px;
     border-radius:50%;
     object-fit:cover;
-    border:3px solid #00a3a3;
-    box-shadow:0 0 25px rgba(0,163,163,0.5);
+    border:3px solid #00b3b3;
+    box-shadow:0 0 35px rgba(0,179,179,0.55);
 }
 
 h1{
     color:#00b3b3;
-    font-size:42px;
+    font-size:52px;
+    margin-bottom:10px;
 }
 
 h2{
-    color:white;
     font-weight:normal;
+    font-size:28px;
+}
+
+.subtitle{
+    font-size:20px;
+    margin-bottom:28px;
 }
 
 .btn{
     display:inline-block;
-    padding:12px 22px;
-    margin:6px;
+    padding:14px 28px;
+    margin:8px;
     background:#00a3a3;
     color:white;
     text-decoration:none;
-    border-radius:5px;
+    border-radius:8px;
+    font-size:18px;
 }
 
 .btn:hover{
@@ -59,30 +66,109 @@ h2{
 }
 
 .section{
-    margin-top:50px;
+    margin-top:28px;
     background:#07192d;
-    padding:25px;
-    border-radius:8px;
+    padding:32px;
+    border-radius:14px;
+    border:1px solid rgba(0,179,179,0.18);
+    box-shadow:0 10px 30px rgba(0,0,0,0.18);
 }
 
 h3{
     color:#00b3b3;
+    font-size:28px;
+    margin-top:0;
 }
 
-ul{
-    line-height:1.8;
+p, li{
+    font-size:19px;
+    line-height:1.7;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+    margin-top:25px;
+}
+
+.stat-card{
+    background:#082238;
+    border:1px solid #00a3a3;
+    border-radius:12px;
+    text-align:center;
+    padding:22px;
+}
+
+.stat-card h3{
+    font-size:34px;
+    margin-bottom:5px;
+}
+
+.skill-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill{
+    background:#082238;
+    border:1px solid rgba(0,179,179,0.45);
+    padding:10px 16px;
+    border-radius:999px;
+    font-size:17px;
 }
 
 .job{
-    margin-bottom:25px;
+    background:#082238;
+    padding:24px;
+    border-radius:12px;
+    margin-bottom:22px;
+    border-left:5px solid #00b3b3;
+}
+
+.job h4{
+    font-size:22px;
+    margin:0;
+}
+
+.date{
+    color:#b9d6d6;
+    margin:8px 0 14px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:18px;
+}
+
+.project-card{
+    background:#082238;
+    padding:24px;
+    border-radius:12px;
+    border:1px solid rgba(0,179,179,0.35);
+}
+
+.project-card h4{
+    color:#00b3b3;
+    font-size:21px;
+    margin-top:0;
 }
 
 .footer{
     text-align:center;
     margin-top:40px;
     color:#ccc;
+    padding-bottom:30px;
 }
 
+@media(max-width:700px){
+    h1{font-size:38px;}
+    h2{font-size:22px;}
+    .container{padding:18px;}
+    .hero img{width:220px;height:220px;}
+}
 </style>
 </head>
 
@@ -91,127 +177,120 @@ ul{
 <div class="container">
 
 <div class="hero">
-
-<img src="nikhil-headshot.jpg">
+<img src="nikhil-headshot.jpg" alt="Nikhil Basapurapu">
 
 <h1>Nikhil Reddy Basapurapu</h1>
-
 <h2>Senior Network Engineer | 8+ Years Experience</h2>
 
-<p>
+<p class="subtitle">
 Enterprise Networking • Cisco ISE • Aruba SD-WAN • Fortinet • Wireless • Data Center
 </p>
 
 <a class="btn" href="mailto:nikhil14307@gmail.com">Email</a>
+<a class="btn" target="_blank" href="https://github.com/nikhil-network">GitHub</a>
+<a class="btn" target="_blank" href="https://www.linkedin.com/in/nikhil-basapurapu/">LinkedIn</a>
+<a class="btn" target="_blank" href="resume.pdf">Resume</a>
+</div>
 
-<a class="btn" target="_blank"
-href="https://github.com/nikhil-network">GitHub</a>
-
-<a class="btn" target="_blank"
-href="https://www.linkedin.com/in/nikhil-basapurapu/">LinkedIn</a>
-
-<a class="btn" target="_blank"
-href="resume.pdf">Resume</a>
-
+<div class="stats">
+<div class="stat-card"><h3>35+</h3><p>Global Site Deployments</p></div>
+<div class="stat-card"><h3>$700K+</h3><p>Cost Savings</p></div>
+<div class="stat-card"><h3>1000+</h3><p>ISE Site Migrations</p></div>
+<div class="stat-card"><h3>8+</h3><p>Years Experience</p></div>
 </div>
 
 <div class="section">
-
 <h3>About Me</h3>
-
 <p>
 Strategic Senior Network Engineer with 8+ years of experience leading enterprise network deployments across global sites, warehouses, and campuses. Specialized in Cisco ISE, Aruba SD-WAN, Fortinet Security, Wireless Infrastructure, Data Center Networking, and Network Modernization.
 </p>
-
 </div>
 
 <div class="section">
-
-<h3>Key Achievements</h3>
-
-<ul>
-<li>Designed and deployed networks across 35+ enterprise sites</li>
-<li>Managed Cisco ISE deployments across NA, EU and APAC regions</li>
-<li>Migrated 35+ sites to Aruba SD-WAN</li>
-<li>Delivered $700,000+ cost savings through optimized network design</li>
-<li>Led ACS to Cisco ISE migrations for 1000+ sites</li>
-</ul>
-
-</div>
-
-<div class="section">
-
 <h3>Technical Skills</h3>
 
-<ul>
-<li>Cisco Catalyst 9500 / 9800</li>
-<li>Nexus 9K / 7K / 5K</li>
-<li>Arista 7050SX3</li>
-<li>Aruba SD-WAN / Silver Peak</li>
-<li>Cisco ISE 3.x</li>
-<li>Fortinet FortiGate</li>
-<li>Cisco ASA</li>
-<li>BGP, OSPF, EIGRP</li>
-<li>Cisco Wireless 9800 / 5520</li>
-<li>Opengear OOB</li>
-<li>Cisco ACI</li>
-<li>SolarWinds / Wireshark</li>
-</ul>
-
+<div class="skill-grid">
+<span class="skill">Cisco Catalyst 9500 / 9800</span>
+<span class="skill">Nexus 9K / 7K / 5K</span>
+<span class="skill">Arista 7050SX3</span>
+<span class="skill">Aruba SD-WAN</span>
+<span class="skill">Silver Peak</span>
+<span class="skill">Cisco ISE 3.x</span>
+<span class="skill">Fortinet FortiGate</span>
+<span class="skill">Cisco ASA</span>
+<span class="skill">BGP</span>
+<span class="skill">OSPF</span>
+<span class="skill">EIGRP</span>
+<span class="skill">Cisco Wireless 9800 / 5520</span>
+<span class="skill">Opengear OOB</span>
+<span class="skill">Cisco ACI</span>
+<span class="skill">SolarWinds</span>
+<span class="skill">Wireshark</span>
+</div>
 </div>
 
 <div class="section">
-
 <h3>Professional Experience</h3>
 
 <div class="job">
 <h4>Network Engineer III | Thermo Fisher Scientific</h4>
-<p>Aug 2021 – Present</p>
+<p class="date">Aug 2021 – Present</p>
 <ul>
-<li>Led deployment of 35+ enterprise sites and warehouses</li>
-<li>Designed Cisco 9500 and Arista based architectures</li>
-<li>Migrated sites to Aruba SD-WAN</li>
-<li>Implemented Fortinet firewall segmentation</li>
-<li>Managed global Cisco ISE infrastructure</li>
+<li>Led deployment of 35+ enterprise sites and warehouses.</li>
+<li>Designed Cisco 9500 and Arista based network architectures.</li>
+<li>Migrated enterprise sites to Aruba SD-WAN.</li>
+<li>Implemented Fortinet firewall segmentation for secure access.</li>
+<li>Managed global Cisco ISE infrastructure.</li>
 </ul>
 </div>
 
 <div class="job">
 <h4>Senior Network Engineer | ExxonMobil</h4>
-<p>Oct 2017 – Jul 2021</p>
+<p class="date">Oct 2017 – Jul 2021</p>
 <ul>
-<li>Migrated 1000+ sites from Cisco ACS to Cisco ISE</li>
-<li>Implemented MAB and 802.1X authentication</li>
-<li>Executed MPLS to Silver Peak migrations</li>
+<li>Migrated 1000+ sites from Cisco ACS to Cisco ISE.</li>
+<li>Implemented MAB and 802.1X authentication.</li>
+<li>Executed MPLS to Silver Peak SD-WAN migrations.</li>
+<li>Created standardized migration templates for enterprise switches.</li>
 </ul>
 </div>
 
 <div class="job">
 <h4>Network Engineer | Comerica Bank</h4>
-<p>Jun 2016 – Sep 2017</p>
+<p class="date">Jun 2016 – Sep 2017</p>
 <ul>
-<li>Supported enterprise banking infrastructure</li>
-<li>Monitored critical network services</li>
-<li>Resolved outages and ISP issues</li>
+<li>Supported enterprise banking network infrastructure.</li>
+<li>Monitored critical network services and circuits.</li>
+<li>Resolved outages and coordinated with ISPs and vendors.</li>
 </ul>
 </div>
-
 </div>
 
 <div class="section">
+<h3>Featured Projects</h3>
 
+<div class="project-grid">
+<div class="project-card">
+<h4>Global Cisco ISE Architecture</h4>
+<p>Designed and supported Cisco ISE deployment across NA, EU, and APAC regions for secure authentication and profiling.</p>
+</div>
+
+<div class="project-card">
+<h4>Aruba SD-WAN Migration</h4>
+<p>Migrated 35+ enterprise sites to Aruba/Silver Peak SD-WAN to improve availability, efficiency, and application performance.</p>
+</div>
+
+<div class="project-card">
+<h4>Fortinet OT Segmentation</h4>
+<p>Implemented Fortinet firewall segmentation to secure manufacturing OT environments and third-party access.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
 <h3>Education</h3>
-
-<p>
-<b>MS - Networking & Telecommunications</b><br>
-Kent State University
-</p>
-
-<p>
-<b>B.Tech - Electronics & Communications</b><br>
-JNTUH
-</p>
-
+<p><b>MS - Networking & Telecommunications</b><br>Kent State University</p>
+<p><b>B.Tech - Electronics & Communications</b><br>JNTUH</p>
 </div>
 
 <div class="footer">
@@ -222,4 +301,3 @@ JNTUH
 
 </body>
 </html>
-
